@@ -1,0 +1,5 @@
+version: v2.5.0
+plugins:
+  - module: github.com/victornechaev/loglint
+    path: .
+    import: github.com/victornechaev/loglint/pkg/loglint

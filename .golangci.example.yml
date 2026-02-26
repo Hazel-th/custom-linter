@@ -1,0 +1,21 @@
+version: "2"
+linters:
+  default: none
+  enable:
+    - loglint
+
+  settings:
+    custom:
+      loglint:
+        type: module
+        description: Linter for validating slog/zap log messages.
+        original-url: github.com/victornechaev/loglint
+        settings:
+          config-path: .loglint.json
+          auto-fix: true
+          disabled-rules: []
+          sensitive-patterns:
+            - client secret
+            - refresh token
+          custom-patterns:
+            order-id: "\\b\\d{4}\\b"
