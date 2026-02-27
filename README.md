@@ -1,4 +1,4 @@
-# loglint
+# cusrom loglint
 
 Линтер для проверки лог-записей в Go, совместимый с `golangci-lint`.
 Проверяет сообщения в `log/slog` и `go.uber.org/zap` по правилам стиля и безопасности.
